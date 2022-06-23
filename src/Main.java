@@ -1,13 +1,14 @@
 public class Main {
 
+    private static double weight = 50; // кг
+    private static double height = 1.5; // м
+
     public static void main(String[] args) {
-        BmiService IMT = new BmiService();
+        BmiService service = new BmiService();
 
-        double weight = 89;
-        double height = 150;
+        double total = service.calculate(weight, height);
 
-        System.out.println("ИМТ равен: " + weight / (height * height));
-
+        System.out.println(total);
 
     }
 }

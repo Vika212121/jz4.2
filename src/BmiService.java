@@ -1,6 +1,6 @@
 public class BmiService {
 
-    public double calculate(int weight, int height) {
+    public double calculate(double weight, double height) {
 
         double IMT = weight / (height * height);
         if (IMT < 16.5) {
